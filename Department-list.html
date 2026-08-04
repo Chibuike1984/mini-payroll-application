@@ -1,0 +1,138 @@
+<?php
+require('../PHP/Department_impliment.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DepartmentPage</title>
+    <link rel="stylesheet" href="Resourses/stylesheet/style1.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    
+    <script type="text/javascript" src="resourses/jquery/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="Resourses/stylesheet/stylee.css">
+</head>
+<body>
+
+    
+
+    <div>
+        <div class="header">
+            <a href="">Recruitment Management System</a>
+            <a href="" class="left"><span class="fa fa-user-circle"></span>
+               welcome, user@gmail.com
+               </a>
+        </div>
+
+        <div class="bodycontent">
+            <div class="body1">
+                
+             <a href="Home.html" style="margin-top:55px;" id="home"><span class="fa fa-home" ></span> Home</a>
+             <a href="Attendance-list.html"  id="attendance"><span class="fa fa-list-ul"></span> Attendance</a>
+             <a href="Payroll-list.html"  id="payroll"><span class="fa fa-columns"></span> Payroll List</a>
+             <a href="Employee-list.html"  id="employee"><span class="fa fa-user-tie"></span> Employee List</a>
+             <a href="Department-list.html"  id="department"><span class="fa fa-columns"></span> Department List</a>
+             <a href="Position-list.html"  id="position"><span class="fa fa-user-tie"></span> Position List</a>
+             <a href="Allowance-list.html"  id="allowance"><span class="fa fa-list-ul"></span> Allowance List</a>
+             <a href="Allowance-list.html"  id="deduction"><span class="fa fa-money-bill-wave"></span> Deduction List</a>
+             <!-- <a href=""  id="users"><span class="fa fa-users"></span> Users</a>-->
+             <a href=""><span class="fa fa-sign-out-alt"></span> Logout</a>
+
+            </div>
+
+            <div class="body2" id="body3">
+
+                <div class="DepartmentContainer">
+
+                    <div class="DepartmentForm">
+                        <div class="p"><p>Department Form</p></div>
+                    
+                    <form action="Department-list.php" method="POST">   
+                        <hr class="hr1">
+                            <label for="DepartmentName" style="padding-left:20px;">Name</label><br>
+                            <input type="text" id="DepartmentName" name="departmentname" required><br>
+                    <hr class="hr2">
+                    <div class="saveDelete">
+                        <center>
+                        <input type="submit" name="save" value="save" class="Save">
+                        <input type="submit" name="Cancel" value="Cancel" class="Cancel">
+                        </center>   
+                    </div>
+                    </form>
+                </div>
+
+
+                <div class="DepartmentTable">
+                    
+                <table border="1px" cellpadding="5px" cellspacing="1px">
+
+                    <tr style="height: 40px;">
+                        <th style="width: 50px;">#</th>
+                        <th>Department</th>
+                        <th style="width: 100px;">Action</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Information Technology (IT)</td>
+                        <td>
+                            <span class="fa fa-edit"></span>
+                            <span class="fa fa-trash-alt"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Human Resources (HR)</td>
+                        <td>
+                            <span class="fa fa-edit"></span>
+                            <span class="fa fa-trash-alt"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Finance</td>
+                        <td>
+                            <span class="fa fa-edit"></span>
+                            <span class="fa fa-trash-alt"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Marketing</td>
+                        <td>
+                            <span class="fa fa-edit"></span>
+                            <span class="fa fa-trash-alt"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Operations</td>
+                        <td>
+                            <span class="fa fa-edit"></span>
+                            <span class="fa fa-trash-alt"></span>
+                        </td>
+                    </tr>
+
+                </table>
+                </div>
+
+
+
+
+
+                    </div>
+
+            </div>
+
+        </div>
+
+    </div>
+ 
+</body>
+</html>

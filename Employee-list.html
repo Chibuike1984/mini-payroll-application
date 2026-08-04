@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmployeePage</title>
+    <link rel="stylesheet" href="Resourses/jquery/jquery-ui-themes-1.13.2/jquery-ui-themes-1.13.2/themes/blitzer/jquery-ui.min.css">
+    <script src="Resourses/jquery/jquery-3.6.3.min.js"></script>
+    <script src="Resourses/jquery/jquery-ui-1.13.2/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="Resourses/stylesheet/style6.css">
+    <link rel="stylesheet" href="Resourses/stylesheet/employeeReg.css"> 
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="Resourses/stylesheet/stylee.css">
+   
+</head>
+<body>
+
+    
+  
+<div>
+        <div class="header">
+            <a href="">Recruitment Management System</a>
+            <a href="" class="left"><span class="fa fa-user-circle"></span>
+               welcome, user@gmail.com
+               </a>
+        </div>
+
+        <div class="bodycontent">
+            <div class="body1">
+                
+             <a href="Home.html" style="margin-top:55px;" id="home"><span class="fa fa-home" ></span> Home</a>
+             <a href="Attendance-list.html"  id="attendance"><span class="fa fa-list-ul"></span> Attendance</a>
+             <a href="Payroll-list.html"  id="payroll"><span class="fa fa-columns"></span> Payroll List</a>
+             <a href="Employee-list.html"  id="employee"><span class="fa fa-user-tie"></span> Employee List</a>
+             <a href="Department-list.html"  id="department"><span class="fa fa-columns"></span> Department List</a>
+             <a href="Position-list.html"  id="position"><span class="fa fa-user-tie"></span> Position List</a>
+             <a href="Allowance-list.html"  id="allowance"><span class="fa fa-list-ul"></span> Allowance List</a>
+             <a href="Allowance-list.html"  id="deduction"><span class="fa fa-money-bill-wave"></span> Deduction List</a>
+             <!-- <a href=""  id="users"><span class="fa fa-users"></span> Users</a>-->
+             <a href=""><span class="fa fa-sign-out-alt"></span> Logout</a>
+
+            </div>
+
+            <div class="body2" id="body3">
+
+                <div class="EmployeeContainer">
+
+                <div class="EmployeeForm">
+
+                        <div class="p">
+                            <p>Employee list</p>
+                            <button id="de"><span class="fa fa-plus"></span> Add Employee</button>
+                        </div>
+                    <form>
+                    
+                        <hr class="hr1">
+                        <div class="p2">
+                            <div class="EmployeeDiv">
+                            <label for="EmployeeName" style="padding-left:20px;">Show</label>
+                            <select id="EmployeeName" aria-placeholder="position">
+                                <option>2</option>
+                                <option>4</option>
+                                <option>6</option>
+                                <option>8</option>
+                                <option>10</option>
+                            </select>
+
+                            <label for="EmployeeName">entries</label>
+                        </div>
+
+                        <div>
+                            <p>Search:<input type="search" id="search" ></p>
+                        </div>
+                        </div>
+                    
+                    <!-- <hr class="hr2"> -->
+                    </form>
+
+                    <div class="DeductionTable">
+                    <table border="1px" cellpadding="5px" cellspacing="1px">
+
+                        <tr style="height: 40px;">
+                            <th>Employee No</th>
+                            <th>Firstname</th>
+                            <th>Middlename</th>
+                            <th>Lastname</th>
+                            <th>Department</th>
+                            <th>Position</th>
+                            <th>Action</th>
+                        </tr>
+
+                        <tr>
+                            <td>EMP001</td>
+                            <td>John</td>
+                            <td>Michael</td>
+                            <td>Doe</td>
+                            <td>IT</td>
+                            <td>Software Developer</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>EMP002</td>
+                            <td>Sarah</td>
+                            <td>Ann</td>
+                            <td>Johnson</td>
+                            <td>HR</td>
+                            <td>HR Manager</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>EMP003</td>
+                            <td>David</td>
+                            <td>James</td>
+                            <td>Smith</td>
+                            <td>Finance</td>
+                            <td>Accountant</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>EMP004</td>
+                            <td>Grace</td>
+                            <td>Mary</td>
+                            <td>Brown</td>
+                            <td>Marketing</td>
+                            <td>Marketing Officer</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>EMP005</td>
+                            <td>Daniel</td>
+                            <td>Paul</td>
+                            <td>Wilson</td>
+                            <td>Operations</td>
+                            <td>Supervisor</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>EMP006</td>
+                            <td>Linda</td>
+                            <td>Rose</td>
+                            <td>Taylor</td>
+                            <td>Customer Service</td>
+                            <td>Support Officer</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>EMP007</td>
+                            <td>Michael</td>
+                            <td>Andrew</td>
+                            <td>Anderson</td>
+                            <td>IT</td>
+                            <td>System Administrator</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>EMP008</td>
+                            <td>Patricia</td>
+                            <td>Jane</td>
+                            <td>Thomas</td>
+                            <td>Sales</td>
+                            <td>Sales Executive</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>EMP009</td>
+                            <td>Christopher</td>
+                            <td>Lee</td>
+                            <td>Jackson</td>
+                            <td>Logistics</td>
+                            <td>Fleet Coordinator</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>EMP010</td>
+                            <td>Olivia</td>
+                            <td>Faith</td>
+                            <td>Martin</td>
+                            <td>Administration</td>
+                            <td>Administrative Officer</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <div class="prevnext">
+                        <p>Showing 1 to 1 entries</p>
+                        <p><a href="">previous</a>  <button>1</button> <a href="">Next</a></p>
+                    </div>
+                
+                </div>
+                </div>
+
+                </div>      
+                </div>
+   
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+      
+    <!--DIALOG REGISTRATION FORM-->
+
+    
+    <div class="EmployeeReg" id="ed">
+        <div class="pp"><p>New Employee</p></div>
+      
+    <form action="Employee-list.php" method="POST">
+       
+        <hr class="hr11">
+        
+            <label for="FirstName" style="padding-left:20px;">FirstName</label><br>
+            <input type="text" id="FirstName" name="firstname"  required><br>
+
+            
+            <label for="MiddleName" style="padding-left:20px;">MiddleName</label><br>
+            <input type="text" id="MiddleName" placeholder="(MiddleName)" name="middlename" ><br>
+
+        
+            <label for="LastName" style="padding-left:20px;">LastName</label><br>
+            <input type="text" id="LastName" name="lastname"  required><br>
+
+            <label for="Department" style="padding-left:20px;">Department</label><br>
+            <select id="Department" name="depart">
+                <option value="">--Please select here--</option>
+                <option value="IT">IT</option>
+                <option value="Human Resources">Human Resources</option>
+                <option value="Finance">Finance</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Operations">Operations</option>
+            </select>
+
+            <br>
+
+            <label for="Position" style="padding-left:20px;">Position</label><br>
+            <select id="Position" name="posi">
+                <option value="">--Please select here--</option>
+                <option value="Software Developer">Software Developer</option>
+                <option value="HR Manager">HR Manager</option>
+                <option value="Accountant">Accountant</option>
+                <option value="Marketing Officer">Marketing Officer</option>
+                <option value="Operations Supervisor">Operations Supervisor</option>
+            </select> <br>
+
+            <label for="Amount"  style="padding-left:20px;">Monthly Salary</label><br>
+            <input type="number" id="Amount" name="amount"><br>
+
+
+       <hr class="hr22">
+       <div class="saveDelete">
+            
+           <input type="reset" name="Cancel" value="Cancel" class="Cancel" id="Cancel">
+           <input type="submit" name="save" value="Save" class="Save">
+          
+       </div>
+    </form>
+   </div>
+
+
+<!--END OF DIALOG REGISTRATION FORM-->
+
+
+
+<script src="Resourses/javascript/employee.js"></script>
+</body>
+</html>

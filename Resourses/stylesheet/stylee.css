@@ -1,0 +1,132 @@
+/*ManagementPage styling*/
+*{
+    padding:0;
+    margin:0;
+}
+
+
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width:100%;
+    height:auto;
+    background-color:lightgray;
+    overflow:hidden;
+   
+}
+
+
+.header{
+    display:flex;
+    background-color:rgb(15, 102, 243);
+    color:white;
+    width:100%;
+    height:50px;
+    position: fixed;
+    
+}
+
+
+.header a{
+    text-decoration:none;
+    color:white;
+    padding-top:15px;
+    padding-left:30px;
+}
+
+
+.left:last-child{
+    margin-left:auto;
+    padding-right:10em;
+    
+}
+
+
+.bodycontent{
+    height:auto;
+    display:grid;
+    grid-template-columns:20% 80%;
+    grid-template-areas:"body1" "body2";
+ 
+}
+
+.body1{
+     background-color:black;
+     height:700vh;
+
+}
+
+tr td{
+    padding:10px;
+}
+
+td{
+    text-align: center;
+}
+
+td .fa{
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+td .fa-edit{
+    color: #007bff;
+}
+
+td .fa-trash-alt{
+    color: #dc3545;
+}
+
+td .fa:hover{
+    opacity: 0.7;
+}
+
+.edit-btn,
+.delete-btn{
+    border: none;
+    padding: 6px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+}
+
+.edit-btn{
+    background-color: #007bff;
+    margin-right: 8px;
+}
+
+.edit-btn:hover{
+    background-color: #0056b3;
+}
+
+.delete-btn{
+    background-color: #dc3545;
+}
+
+.delete-btn:hover{
+    background-color: #b02a37;
+}
+
+.body2{
+    height:700px;
+    width:100%;
+    padding-top:50px;
+}
+
+.body1 a{
+    display:block;
+    text-decoration:none;
+    margin-bottom:5px;
+    color:darkgrey;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-top:20px;
+}
+
+.body1 a:hover{
+    background-color:rgb(24, 29, 29);
+    color:white;
+}
+
+

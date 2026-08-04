@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Page</title>
+
+    <script type="text/javascript" src="resourses/jquery/jquery-3.6.3.min.js"></script>
+
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="Resourses/stylesheet/stylee.css">
+    <link rel="stylesheet" href="Resourses/stylesheet/style4.css">
+</head>
+<body>
+
+    <div>
+
+        <div class="header">
+            <a href="">Recruitment Management System</a>
+
+            <a href="" class="left">
+                <span class="fa fa-user-circle"></span>
+                welcome, user@gmail.com
+            </a>
+        </div>
+
+        <div class="bodycontent">
+
+            <div class="body1">
+                <a href="Home.html" style="margin-top:55px;" id="home"><span class="fa fa-home"></span> Home</a>
+                <a href="Attendance-list.html" id="attendance"><span class="fa fa-list-ul"></span> Attendance</a>
+                <a href="Payroll-list.html" id="payroll"><span class="fa fa-columns"></span> Payroll List</a>
+                <a href="Employee-list.html" id="employee"><span class="fa fa-user-tie"></span> Employee List</a>
+                <a href="Department-list.html" id="department"><span class="fa fa-columns"></span> Department List</a>
+                <a href="Position-list.html" id="position"><span class="fa fa-user-tie"></span> Position List</a>
+                <a href="Allowance-list.html" id="allowance"><span class="fa fa-list-ul"></span> Allowance List</a>
+                <a href="Deduction-list.html" id="deduction"><span class="fa fa-money-bill-wave"></span> Deduction List</a>
+                <!-- <a href="" id="users"><span class="fa fa-users"></span> Users</a> -->
+                <a href=""><span class="fa fa-sign-out-alt"></span> Logout</a>
+
+            </div>
+
+            <div class="body2" id="body3">
+
+                <!-- Allowance Page Starts Here -->
+
+                <div class="AllowanceContainer">
+
+                    <div class="AllowanceForm">
+
+                        <div class="p">
+                            <p>Allowance Form</p>
+                        </div>
+
+                        <form action="#" method="POST">
+
+                            <hr class="hr1">
+
+                            <label for="AllowanceName1" style="padding-left:20px;">Allowance</label><br>
+                            <input type="text" id="AllowanceName1" name="allowancename" required><br>
+
+                            <label for="AllowanceName2" style="padding-left:20px;">Description</label><br>
+                            <input type="text" id="AllowanceName2" name="description" required><br>
+
+                            <hr class="hr2">
+
+                            <div class="saveDelete">
+                                <center>
+                                    <input type="submit" name="save" value="Save" class="Save">
+                                    <input type="submit" name="Cancel" value="Cancel" class="Cancel">
+                                </center>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <div class="AllowanceTable">
+
+                        <table border="1" cellpadding="5" cellspacing="1">
+
+                            <tr style="height:40px;">
+                                <th>#</th>
+                                <th>Allowance Information</th>
+                                <th style="width:200px;">Action</th>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>Meal Allowance</td>
+                                <td>
+                                    <button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>Transport Allowance</td>
+                                <td>
+                                    <button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>Housing Allowance</td>
+                                <td>
+                                    <button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td>Medical Allowance</td>
+                                <td>
+                                    <button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>5</td>
+                                <td>Communication Allowance</td>
+                                <td>
+                                    <button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+                <!-- Allowance Page Ends Here -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="Resourses/javascript/jquery.js"></script>
+
+</body>
+</html>
