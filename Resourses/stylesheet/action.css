@@ -1,0 +1,34 @@
+
+.edit-btn,
+.delete-btn,
+.view-btn{
+    border: none;
+    padding: 6px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+}
+
+.edit-btn{
+    background-color: #007bff;
+    margin-right: 8px;
+}
+
+.view-btn
+{
+    background-color: #235604;
+    margin-right: 8px;
+}
+
+.edit-btn:hover{
+    background-color: #0056b3;
+}
+
+.delete-btn{
+    background-color: #dc3545;
+}
+
+.delete-btn:hover{
+    background-color: #b02a37;
+}

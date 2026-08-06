@@ -82,7 +82,8 @@ td .fa:hover{
 }
 
 .edit-btn,
-.delete-btn{
+.delete-btn,
+.view-btn{
     border: none;
     padding: 6px 15px;
     border-radius: 4px;
@@ -93,6 +94,12 @@ td .fa:hover{
 
 .edit-btn{
     background-color: #007bff;
+    margin-right: 8px;
+}
+
+.view-btn
+{
+    background-color: #235604;
     margin-right: 8px;
 }
 

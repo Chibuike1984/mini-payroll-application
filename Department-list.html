@@ -13,6 +13,8 @@ require('../PHP/Department_impliment.php');
     <script type="text/javascript" src="resourses/jquery/jquery-3.6.3.min.js"></script>
     <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
     <link rel="stylesheet" href="Resourses/stylesheet/stylee.css">
+
+    <link rel="stylesheet" href="Resourses/stylesheet/action.css">
 </head>
 <body>
 
@@ -36,7 +38,7 @@ require('../PHP/Department_impliment.php');
              <a href="Department-list.html"  id="department"><span class="fa fa-columns"></span> Department List</a>
              <a href="Position-list.html"  id="position"><span class="fa fa-user-tie"></span> Position List</a>
              <a href="Allowance-list.html"  id="allowance"><span class="fa fa-list-ul"></span> Allowance List</a>
-             <a href="Allowance-list.html"  id="deduction"><span class="fa fa-money-bill-wave"></span> Deduction List</a>
+             <a href="Deduction-list.html"  id="deduction"><span class="fa fa-money-bill-wave"></span> Deduction List</a>
              <!-- <a href=""  id="users"><span class="fa fa-users"></span> Users</a>-->
              <a href=""><span class="fa fa-sign-out-alt"></span> Logout</a>
 
@@ -66,63 +68,57 @@ require('../PHP/Department_impliment.php');
 
                 <div class="DepartmentTable">
                     
-                <table border="1px" cellpadding="5px" cellspacing="1px">
+                <table border="1" cellpadding="5" cellspacing="1">
 
                     <tr style="height: 40px;">
                         <th style="width: 50px;">#</th>
-                        <th>Department</th>
+                        <th style="text-align: left; padding-left:20px;">Name</th>
                         <th style="width: 100px;">Action</th>
                     </tr>
 
                     <tr>
                         <td>1</td>
-                        <td>Information Technology (IT)</td>
+                        <td style="text-align: left; padding-left:20px;">
+                            <strong>Department:</strong> Information Technology (IT)<br>
+                        </td>
                         <td>
-                            <span class="fa fa-edit"></span>
-                            <span class="fa fa-trash-alt"></span>
+                            <div style="display: flex;">
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </div>
                         </td>
                     </tr>
 
                     <tr>
                         <td>2</td>
-                        <td>Human Resources (HR)</td>
+                        <td style="text-align: left; padding-left:20px;">
+                            <strong>Department:</strong> Human Resources (HR)<br>
+                        </td>
                         <td>
-                            <span class="fa fa-edit"></span>
-                            <span class="fa fa-trash-alt"></span>
+                            <div style="display: flex;">
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </div>
                         </td>
                     </tr>
 
                     <tr>
                         <td>3</td>
-                        <td>Finance</td>
-                        <td>
-                            <span class="fa fa-edit"></span>
-                            <span class="fa fa-trash-alt"></span>
+                        <td style="text-align: left; padding-left:20px;">
+                            <strong>Department:</strong> Finance<br>
                         </td>
-                    </tr>
-
-                    <tr>
-                        <td>4</td>
-                        <td>Marketing</td>
                         <td>
-                            <span class="fa fa-edit"></span>
-                            <span class="fa fa-trash-alt"></span>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>5</td>
-                        <td>Operations</td>
-                        <td>
-                            <span class="fa fa-edit"></span>
-                            <span class="fa fa-trash-alt"></span>
+                            <div style="display: flex;">
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </div>
                         </td>
                     </tr>
 
                 </table>
                 </div>
 
-
+ 
 
 
 
